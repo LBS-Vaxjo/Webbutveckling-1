@@ -23,7 +23,7 @@ Plats nummer två (och alla andra) är att skriva Script-taggen i `<body></body`
 Exempel:
 ```html
 <body>
-	<script src="./link/to/script.js"></script>
+    <script src="./link/to/script.js"></script>
 </body>
 ```
 ## <a name="Selectors"></a> Selectors

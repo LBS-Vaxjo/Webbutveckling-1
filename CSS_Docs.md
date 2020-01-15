@@ -6,6 +6,7 @@ This Docs contains: <br/>
 
 ---
 ## <a name="Linking"></a> Linking
+### Länka CSS
 För att länka ett externt CSS doskument till din HTML fil så använder vi taggen `link` som vi lägger i vår `head`. I taggen så sätter vi attributet `rel` till `stylesheet` och attributet `href` till länken till vårt CSS dokument. Det betyder att vår HTML kod kan se ut såhär:
 ```html
 <head>
@@ -13,6 +14,18 @@ För att länka ett externt CSS doskument till din HTML fil så använder vi tag
 </head>
 ```
 Det går bra att använda lokala / relativa länkar när vi länkar till en CSS fil. Så för att gå en nivå djupare så skriver vi namnet på mappen följt av ett snedsträck  (`first_folder/contiue.css`). För att gå up en nivå använder vi två punkter följt av ett snedsträck (`../upper.css`).
+### Länka JavaScript
+Länka ett JavaScript-dokument gör vi genom att använda taggen `<script></script>`. Script taggen går att använda både för att skriva JavaScript-kod direkt i taggen och för att länka till ett externt JavaScript-dokument.  
+
+När vi länkar JavaScript går det att göra på två (generellt, men kan vara fler) ställen i koden. Första stället är att skriva `<script src=""></script>` i `<head></head>` taggen. Att länka JavaScript i head-taggen är ofta inte rekommenderat eftersom då kommer koden i JavaScript att köras innan hela HTML dokumentet har laddats in.  
+Plats nummer två (och alla andra) är att skriva Script-taggen i `<body></body` istället. Detta är rekommenderat att skripten läggs längst ner på sidan för att låta webbläsaren ladda in hela HTML sidan före den börjar arbeta med JavaScript-koden.  
+
+Exempel:
+```html
+<body>
+	<script src="./link/to/script.js"></script>
+</body>
+```
 ## <a name="Selectors"></a> Selectors
 En Selector används för att välja ut vilket eller vilka HTML element vi will påverka. Det finns tre olika huvudsakliga selectorer och de är:
 * Element selektor

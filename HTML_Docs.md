@@ -1,4 +1,4 @@
-# CSS Help Doc
+# HTML Help Doc
 This Docs contains: <br/>
 [Linking](#Linking) <br/>
 [Selectors](#Selectors) <br/>
